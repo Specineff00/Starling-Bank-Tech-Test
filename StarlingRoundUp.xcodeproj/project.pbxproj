@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB4782DA230012F00011D21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4782D9230012F00011D21A /* AppDelegate.swift */; };
+		CB4782DF230012F00011D21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4782DD230012F00011D21A /* Main.storyboard */; };
+		CB4782E1230012F20011D21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4782E0230012F20011D21A /* Assets.xcassets */; };
+		CB4782E4230012F20011D21A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4782E2230012F20011D21A /* LaunchScreen.storyboard */; };
+		CB4782EF230012F20011D21A /* StarlingRoundUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4782EE230012F20011D21A /* StarlingRoundUpTests.swift */; };
+		CB4782FA230012F20011D21A /* StarlingRoundUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4782F9230012F20011D21A /* StarlingRoundUpUITests.swift */; };
+		CB47830823001C8B0011D21A /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47830723001C8B0011D21A /* ApplicationCoordinator.swift */; };
+		CB47830D23001D5A0011D21A /* RoundupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47830B23001D5A0011D21A /* RoundupViewController.swift */; };
+		CB47830E23001D5A0011D21A /* RoundupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB47830C23001D5A0011D21A /* RoundupViewController.xib */; };
+		CB47831023001E060011D21A /* RoundUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47830F23001E060011D21A /* RoundUpViewModel.swift */; };
+		CB47831E230021900011D21A /* RoundUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47831D230021900011D21A /* RoundUpCoordinator.swift */; };
+		CB478322230028CB0011D21A /* URLSession+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB478321230028CB0011D21A /* URLSession+Additions.swift */; };
+		CB478324230028DA0011D21A /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB478323230028DA0011D21A /* NetworkLayer.swift */; };
+		CB478326230040700011D21A /* HeadersHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB478325230040700011D21A /* HeadersHelper.swift */; };
+		CB47832B230048100011D21A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47832A230048100011D21A /* Account.swift */; };
+		CB47832D230048780011D21A /* AccountsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47832C230048780011D21A /* AccountsList.swift */; };
+		CB47832F230049660011D21A /* FeedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47832E230049660011D21A /* FeedItems.swift */; };
+		CB478331230049B10011D21A /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB478330230049B10011D21A /* FeedItem.swift */; };
+		CB47833323004BAD0011D21A /* DataAccessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47833223004BAD0011D21A /* DataAccessObject.swift */; };
+		CB478337230062960011D21A /* SavingsGoalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB478336230062960011D21A /* SavingsGoalsList.swift */; };
+		CB478339230062A40011D21A /* SavingsGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB478338230062A40011D21A /* SavingsGoal.swift */; };
+		CB47833B230063220011D21A /* TotalSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47833A230063220011D21A /* TotalSaved.swift */; };
+		CB47833E230065590011D21A /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47833D230065590011D21A /* Target.swift */; };
+		CB478340230082720011D21A /* SavedSavingsGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47833F230082720011D21A /* SavedSavingsGoal.swift */; };
+		CB4783422300903D0011D21A /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4783412300903D0011D21A /* Amount.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB4782EB230012F20011D21A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4782CE230012F00011D21A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB4782D5230012F00011D21A;
+			remoteInfo = StarlingRoundUp;
+		};
+		CB4782F6230012F20011D21A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4782CE230012F00011D21A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB4782D5230012F00011D21A;
+			remoteInfo = StarlingRoundUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB4782D6230012F00011D21A /* StarlingRoundUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarlingRoundUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4782D9230012F00011D21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB4782DE230012F00011D21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB4782E0230012F20011D21A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB4782E3230012F20011D21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB4782E5230012F20011D21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4782EA230012F20011D21A /* StarlingRoundUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarlingRoundUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4782EE230012F20011D21A /* StarlingRoundUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingRoundUpTests.swift; sourceTree = "<group>"; };
+		CB4782F0230012F20011D21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4782F5230012F20011D21A /* StarlingRoundUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarlingRoundUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4782F9230012F20011D21A /* StarlingRoundUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingRoundUpUITests.swift; sourceTree = "<group>"; };
+		CB4782FB230012F20011D21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB47830723001C8B0011D21A /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		CB47830B23001D5A0011D21A /* RoundupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundupViewController.swift; sourceTree = "<group>"; };
+		CB47830C23001D5A0011D21A /* RoundupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundupViewController.xib; sourceTree = "<group>"; };
+		CB47830F23001E060011D21A /* RoundUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpViewModel.swift; sourceTree = "<group>"; };
+		CB47831D230021900011D21A /* RoundUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpCoordinator.swift; sourceTree = "<group>"; };
+		CB478321230028CB0011D21A /* URLSession+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Additions.swift"; sourceTree = "<group>"; };
+		CB478323230028DA0011D21A /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		CB478325230040700011D21A /* HeadersHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadersHelper.swift; sourceTree = "<group>"; };
+		CB47832A230048100011D21A /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		CB47832C230048780011D21A /* AccountsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsList.swift; sourceTree = "<group>"; };
+		CB47832E230049660011D21A /* FeedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItems.swift; sourceTree = "<group>"; };
+		CB478330230049B10011D21A /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		CB47833223004BAD0011D21A /* DataAccessObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessObject.swift; sourceTree = "<group>"; };
+		CB478336230062960011D21A /* SavingsGoalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoalsList.swift; sourceTree = "<group>"; };
+		CB478338230062A40011D21A /* SavingsGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoal.swift; sourceTree = "<group>"; };
+		CB47833A230063220011D21A /* TotalSaved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSaved.swift; sourceTree = "<group>"; };
+		CB47833D230065590011D21A /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		CB47833F230082720011D21A /* SavedSavingsGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSavingsGoal.swift; sourceTree = "<group>"; };
+		CB4783412300903D0011D21A /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB4782D3230012F00011D21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4782E7230012F20011D21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4782F2230012F20011D21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB4782CD230012F00011D21A = {
+			isa = PBXGroup;
+			children = (
+				CB4782D8230012F00011D21A /* StarlingRoundUp */,
+				CB4782ED230012F20011D21A /* StarlingRoundUpTests */,
+				CB4782F8230012F20011D21A /* StarlingRoundUpUITests */,
+				CB4782D7230012F00011D21A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB4782D7230012F00011D21A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB4782D6230012F00011D21A /* StarlingRoundUp.app */,
+				CB4782EA230012F20011D21A /* StarlingRoundUpTests.xctest */,
+				CB4782F5230012F20011D21A /* StarlingRoundUpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB4782D8230012F00011D21A /* StarlingRoundUp */ = {
+			isa = PBXGroup;
+			children = (
+				CB4782D9230012F00011D21A /* AppDelegate.swift */,
+				CB47831F230027400011D21A /* Coordinators */,
+				CB4783202300274D0011D21A /* Round Up */,
+				CB4782DD230012F00011D21A /* Main.storyboard */,
+				CB4782E0230012F20011D21A /* Assets.xcassets */,
+				CB4782E2230012F20011D21A /* LaunchScreen.storyboard */,
+				CB4782E5230012F20011D21A /* Info.plist */,
+			);
+			path = StarlingRoundUp;
+			sourceTree = "<group>";
+		};
+		CB4782ED230012F20011D21A /* StarlingRoundUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB4782EE230012F20011D21A /* StarlingRoundUpTests.swift */,
+				CB4782F0230012F20011D21A /* Info.plist */,
+			);
+			path = StarlingRoundUpTests;
+			sourceTree = "<group>";
+		};
+		CB4782F8230012F20011D21A /* StarlingRoundUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB4782F9230012F20011D21A /* StarlingRoundUpUITests.swift */,
+				CB4782FB230012F20011D21A /* Info.plist */,
+			);
+			path = StarlingRoundUpUITests;
+			sourceTree = "<group>";
+		};
+		CB47831F230027400011D21A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CB47830723001C8B0011D21A /* ApplicationCoordinator.swift */,
+				CB47831D230021900011D21A /* RoundUpCoordinator.swift */,
+				CB478329230046E40011D21A /* Utilities */,
+				CB478327230046CA0011D21A /* Models */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CB4783202300274D0011D21A /* Round Up */ = {
+			isa = PBXGroup;
+			children = (
+				CB47830B23001D5A0011D21A /* RoundupViewController.swift */,
+				CB47830F23001E060011D21A /* RoundUpViewModel.swift */,
+				CB47830C23001D5A0011D21A /* RoundupViewController.xib */,
+			);
+			path = "Round Up";
+			sourceTree = "<group>";
+		};
+		CB478327230046CA0011D21A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB47833C230063540011D21A /* Networking */,
+				CB47832A230048100011D21A /* Account.swift */,
+				CB47832C230048780011D21A /* AccountsList.swift */,
+				CB47832E230049660011D21A /* FeedItems.swift */,
+				CB478330230049B10011D21A /* FeedItem.swift */,
+				CB4783412300903D0011D21A /* Amount.swift */,
+				CB478336230062960011D21A /* SavingsGoalsList.swift */,
+				CB478338230062A40011D21A /* SavingsGoal.swift */,
+				CB47833F230082720011D21A /* SavedSavingsGoal.swift */,
+				CB47833D230065590011D21A /* Target.swift */,
+				CB47833A230063220011D21A /* TotalSaved.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB478329230046E40011D21A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CB478321230028CB0011D21A /* URLSession+Additions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CB47833C230063540011D21A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB478323230028DA0011D21A /* NetworkLayer.swift */,
+				CB47833223004BAD0011D21A /* DataAccessObject.swift */,
+				CB478325230040700011D21A /* HeadersHelper.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB4782D5230012F00011D21A /* StarlingRoundUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4782FE230012F20011D21A /* Build configuration list for PBXNativeTarget "StarlingRoundUp" */;
+			buildPhases = (
+				CB4782D2230012F00011D21A /* Sources */,
+				CB4782D3230012F00011D21A /* Frameworks */,
+				CB4782D4230012F00011D21A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarlingRoundUp;
+			productName = StarlingRoundUp;
+			productReference = CB4782D6230012F00011D21A /* StarlingRoundUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB4782E9230012F20011D21A /* StarlingRoundUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB478301230012F20011D21A /* Build configuration list for PBXNativeTarget "StarlingRoundUpTests" */;
+			buildPhases = (
+				CB4782E6230012F20011D21A /* Sources */,
+				CB4782E7230012F20011D21A /* Frameworks */,
+				CB4782E8230012F20011D21A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB4782EC230012F20011D21A /* PBXTargetDependency */,
+			);
+			name = StarlingRoundUpTests;
+			productName = StarlingRoundUpTests;
+			productReference = CB4782EA230012F20011D21A /* StarlingRoundUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB4782F4230012F20011D21A /* StarlingRoundUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB478304230012F20011D21A /* Build configuration list for PBXNativeTarget "StarlingRoundUpUITests" */;
+			buildPhases = (
+				CB4782F1230012F20011D21A /* Sources */,
+				CB4782F2230012F20011D21A /* Frameworks */,
+				CB4782F3230012F20011D21A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB4782F7230012F20011D21A /* PBXTargetDependency */,
+			);
+			name = StarlingRoundUpUITests;
+			productName = StarlingRoundUpUITests;
+			productReference = CB4782F5230012F20011D21A /* StarlingRoundUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB4782CE230012F00011D21A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yogesh Nikash Ramsorrun";
+				TargetAttributes = {
+					CB4782D5230012F00011D21A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					CB4782E9230012F20011D21A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CB4782D5230012F00011D21A;
+					};
+					CB4782F4230012F20011D21A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CB4782D5230012F00011D21A;
+					};
+				};
+			};
+			buildConfigurationList = CB4782D1230012F00011D21A /* Build configuration list for PBXProject "StarlingRoundUp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB4782CD230012F00011D21A;
+			productRefGroup = CB4782D7230012F00011D21A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB4782D5230012F00011D21A /* StarlingRoundUp */,
+				CB4782E9230012F20011D21A /* StarlingRoundUpTests */,
+				CB4782F4230012F20011D21A /* StarlingRoundUpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB4782D4230012F00011D21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4782E4230012F20011D21A /* LaunchScreen.storyboard in Resources */,
+				CB4782E1230012F20011D21A /* Assets.xcassets in Resources */,
+				CB47830E23001D5A0011D21A /* RoundupViewController.xib in Resources */,
+				CB4782DF230012F00011D21A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4782E8230012F20011D21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4782F3230012F20011D21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB4782D2230012F00011D21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB478324230028DA0011D21A /* NetworkLayer.swift in Sources */,
+				CB478322230028CB0011D21A /* URLSession+Additions.swift in Sources */,
+				CB47830823001C8B0011D21A /* ApplicationCoordinator.swift in Sources */,
+				CB4783422300903D0011D21A /* Amount.swift in Sources */,
+				CB47831E230021900011D21A /* RoundUpCoordinator.swift in Sources */,
+				CB478340230082720011D21A /* SavedSavingsGoal.swift in Sources */,
+				CB47832F230049660011D21A /* FeedItems.swift in Sources */,
+				CB47833323004BAD0011D21A /* DataAccessObject.swift in Sources */,
+				CB47833E230065590011D21A /* Target.swift in Sources */,
+				CB478326230040700011D21A /* HeadersHelper.swift in Sources */,
+				CB47832B230048100011D21A /* Account.swift in Sources */,
+				CB4782DA230012F00011D21A /* AppDelegate.swift in Sources */,
+				CB478339230062A40011D21A /* SavingsGoal.swift in Sources */,
+				CB478337230062960011D21A /* SavingsGoalsList.swift in Sources */,
+				CB47833B230063220011D21A /* TotalSaved.swift in Sources */,
+				CB478331230049B10011D21A /* FeedItem.swift in Sources */,
+				CB47832D230048780011D21A /* AccountsList.swift in Sources */,
+				CB47831023001E060011D21A /* RoundUpViewModel.swift in Sources */,
+				CB47830D23001D5A0011D21A /* RoundupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4782E6230012F20011D21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4782EF230012F20011D21A /* StarlingRoundUpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4782F1230012F20011D21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4782FA230012F20011D21A /* StarlingRoundUpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB4782EC230012F20011D21A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB4782D5230012F00011D21A /* StarlingRoundUp */;
+			targetProxy = CB4782EB230012F20011D21A /* PBXContainerItemProxy */;
+		};
+		CB4782F7230012F20011D21A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB4782D5230012F00011D21A /* StarlingRoundUp */;
+			targetProxy = CB4782F6230012F20011D21A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB4782DD230012F00011D21A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4782DE230012F00011D21A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB4782E2230012F20011D21A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4782E3230012F20011D21A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB4782FC230012F20011D21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB4782FD230012F20011D21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB4782FF230012F20011D21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L85D626Q4H;
+				INFOPLIST_FILE = StarlingRoundUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Specineff-Industries.StarlingRoundUp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB478300230012F20011D21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L85D626Q4H;
+				INFOPLIST_FILE = StarlingRoundUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Specineff-Industries.StarlingRoundUp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB478302230012F20011D21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L85D626Q4H;
+				INFOPLIST_FILE = StarlingRoundUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Specineff-Industries.StarlingRoundUpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarlingRoundUp.app/StarlingRoundUp";
+			};
+			name = Debug;
+		};
+		CB478303230012F20011D21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L85D626Q4H;
+				INFOPLIST_FILE = StarlingRoundUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Specineff-Industries.StarlingRoundUpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarlingRoundUp.app/StarlingRoundUp";
+			};
+			name = Release;
+		};
+		CB478305230012F20011D21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L85D626Q4H;
+				INFOPLIST_FILE = StarlingRoundUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Specineff-Industries.StarlingRoundUpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarlingRoundUp;
+			};
+			name = Debug;
+		};
+		CB478306230012F20011D21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L85D626Q4H;
+				INFOPLIST_FILE = StarlingRoundUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Specineff-Industries.StarlingRoundUpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarlingRoundUp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB4782D1230012F00011D21A /* Build configuration list for PBXProject "StarlingRoundUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4782FC230012F20011D21A /* Debug */,
+				CB4782FD230012F20011D21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB4782FE230012F20011D21A /* Build configuration list for PBXNativeTarget "StarlingRoundUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4782FF230012F20011D21A /* Debug */,
+				CB478300230012F20011D21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB478301230012F20011D21A /* Build configuration list for PBXNativeTarget "StarlingRoundUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB478302230012F20011D21A /* Debug */,
+				CB478303230012F20011D21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB478304230012F20011D21A /* Build configuration list for PBXNativeTarget "StarlingRoundUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB478305230012F20011D21A /* Debug */,
+				CB478306230012F20011D21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB4782CE230012F00011D21A /* Project object */;
+}
